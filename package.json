@@ -1,0 +1,8 @@
+{
+  "name": "githubActionsTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kzalite/githubActionsTest.git",
+  "author": "karlis <karlis.zalite@gmail.com>",
+  "license": "none"
+}
