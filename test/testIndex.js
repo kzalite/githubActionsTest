@@ -8,6 +8,6 @@ const index = require('../index');
 describe('main module', () => {
   it('should return the input', () => {
     var result = index.toTest(1);
-    expect(result).to.equal(1);
+    expect(result).to.equal(2);
   });
 });
