@@ -6,7 +6,7 @@
   "author": "karlis <karlis.zalite@gmail.com>",
   "license": "none",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "dependencies": {
     "chai": "^4.2.0",
