@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:kzalite/githubActionsTest.git",
   "author": "karlis <karlis.zalite@gmail.com>",
-  "license": "none"
+  "license": "none",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
 }
