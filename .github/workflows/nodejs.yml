@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
         os: [ubuntu-16.04]
 
     steps:
@@ -22,7 +22,10 @@ jobs:
         
     - name: npm install, build, and test
       run: |
-        npm install
+        curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+        echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+        sudo apt-get update && sudo apt-get install yarn
+        yarn
         npm test
       env:
         CI: true
